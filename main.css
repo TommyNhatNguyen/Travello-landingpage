@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background-cl: #FFFFFF;
+        --max-width-page: 1440px;
+        --pd-container: 154px;
+        --max-width-container: calc(1228px + var(--pd-container)*2);
+        --ff-regular: "pr";
+        --ff-medium: "pm";
+        --ff-semibold: "psm";
+        --ff-bold: "pb";
+        --ff-vbold: "vb";
+        --fs-text: 1.6rem;
+        --fs-h1: 8.4rem;
+        --fs-h2: 5.0rem;
+        --fs-h3: 2.0rem;
+        --fs-h4: 1.8rem;
+        --fs-title-big: 2.1rem;
+        --fs-title-medium: 2.0rem;
+        --fs-title-small: 1.8rem;
+        --fs-foot: 1.4rem;
+        --fs-btn: 1.8rem;
+    }
+
+    html {
+        font-size: 62.5%;
+        background-color: var(--background-cl);
+        margin: auto;
+        @apply text-blue-100;
+        width: 100%;
+        height: 100%;
+
+        body {
+            width: 100%;
+            height: 100%;
+            max-width: var(--max-width-page);
+            margin: auto;
+            font-family: var(--ff-medium);
+            font-size: var(--fs-text);
+
+            .container {
+                max-width: var(--max-width-container);
+                padding-right: var(--pd-container);
+                padding-left: var(--pd-container);
+                margin: auto;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@layer components {
+    img {
+        max-width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+    }
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-between-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .currentlang .currentlang__icon {
+        transition-duration: 0.3s;
+    }
+
+    .currentlang.active .currentlang__icon {
+        transform: rotate(180deg);
+
+    }
+}

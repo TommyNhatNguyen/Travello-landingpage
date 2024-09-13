@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./css/fonts/fonts.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container flex-between-center flex-1 pt-12 gap-4">
+        <a href="#" class="header__img h-[53px] flex-center flex-shrink-0">
+          <img
+            src="/assets/images/logo.png"
+            alt="logo icon"
+            class="object-center"
+          />
+        </a>
+        <nav class="header__nav flex-center gap-2 *:p-6 flex-1">
+          <a href="#" class="text-blue-50 hover:text-orange-100 duration-300"
+            >Destinations</a
+          >
+          <a href="#" class="text-blue-50 hover:text-orange-100 duration-300"
+            >Hotels</a
+          >
+          <a href="#" class="text-blue-50 hover:text-orange-100 duration-300"
+            >Flights</a
+          >
+          <a href="#" class="text-blue-50 hover:text-orange-100 duration-300"
+            >Bookings</a
+          >
+        </nav>
+        <div class="header__cta flex items-center gap-4 justify-between">
+          <div class="header__cta-modal flex gap-4 items-center">
+            <a
+              href="#"
+              class="text-blue-50 h-10 px-5 flex-center hover:text-orange-100 duration-300"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="text-blue-50 btn h-[40px] px-5 rounded-md border-[1px] border-blue-50 text-nowrap flex-center duration-300 hover:bg-orange-100 hover:text-white"
+              >Sign up</a
+            >
+          </div>
+          <div class="header__cta-lang relative">
+            <div class="currentlang flex-center gap-2 cursor-pointer group">
+              <span
+                class="currentlang__text text-blue-50 uppercase group-hover:text-orange-100 duration-300"
+                >en</span
+              >
+              <div
+                class="currentlang__icon h-[4.5px] flex-center flex-shrink-0"
+              >
+                <img
+                  src="/assets/images/arrowdown-icon.png"
+                  alt="arrow down icon"
+                />
+              </div>
+            </div>
+            <ul class="dropdownlang hidden absolute top-10 z-20">
+              <li
+                class="dropdownlang__item text-blue-50 uppercase hover:text-orange-100 duration-300 cursor-pointer"
+              >
+                VN
+              </li>
+              <li
+                class="dropdownlang__item text-blue-50 uppercase hover:text-orange-100 duration-300 cursor-pointer"
+              >
+                JP
+              </li>
+              <li
+                class="dropdownlang__item text-blue-50 uppercase hover:text-orange-100 duration-300 cursor-pointer"
+              >
+                CN
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="app" class="relative">
+      <section id="hero" class="pt-[115px]">
+        <div class="container relative flex-center">
+          <div class="textbox max-w-[630px] flex-shrink-0">
+            <h3 class="text-h3 text-orange-200 text-bold mb-6">
+              Best Destinations around the world
+            </h3>
+            <h1 class="text-h1 text-volkhovBold text-blue-200 relative">
+              Travel,
+              <span class="absolute"
+                >enjoy,
+                <span
+                  class="absolute flex-center left-[-20px] bottom-0 block w-[150%] bottom-[25px]"
+                >
+                  <img src="/assets/images/dash.png" alt="dash" /> </span
+              ></span>
+              <br />
+              and live a new <br />and full life
+            </h1>
+            <p class="mt-8 mb-9 max-w-[300px]">
+              Built Wicket longer admire do barton vanity itself do in it.
+              Preferred to sportsmen it engrossed listening. Park gate sell they
+              west hard for the.
+            </p>
+            <div class="btngroup flex items-center gap-10">
+              <a
+                href="#"
+                class="h-[60px] rounded-lg bg-orange-100 flex-center text-white px-6 hover:bg-orange-200 duration-300 shadow-[0px_20px_35px_0px_rgba(241,153,1,0.15)]"
+                >Find out more</a
+              >
+              <div class="flex-center gap-5 cursor-pointer group">
+                <button
+                  type="button"
+                  class="h-[52px] w-[52px] duration-300 group-hover:scale-125 rounded-full bg-orange-200 flex-center shadow-[0px_15px_30px_0px_rgba(223,105,81,0.3)]"
+                >
+                  <img
+                    src="/assets/images/play-btn.png"
+                    alt="play button"
+                    class="w-[10px] h-[10px]"
+                  />
+                </button>
+                <span class="text-blue-150">Play demo</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-center max-h-[764px]">
+            <img src="/assets/images/hero-1.png" alt="hero" />
+          </div>
+        </div>
+      </section>
+      <section id="service" class="pt-[97px]">
+        <div class="textbox m-auto text-center">
+          <h4 class="text-h4 text-semibold uppercase">CATEGORY</h4>
+          <h2 class="text-volkhovBold text-h2 text-[#14183E]">
+            We Offer Best Services
+          </h2>
+        </div>
+        <ul class="service__list flex items-stretch justify-center mt-16 gap-4">
+          <li
+            class="service__list-item text-center flex flex-col items-center justify-center p-[45px] hover:bg-white hover:shadow-lg duration-300 rounded-[36px] cursor-pointer"
+          >
+            <div class="img relative">
+              <img
+                src="/assets/images/weather-icon.png"
+                alt="weather"
+                class="relative z-20"
+              />
+              <div
+                class="h-[50px] w-[50px] absolute bg-[#FFF1DA] rounded-tl-[20px] rounded-br-[20px] right-[-20px] top-[30px] z-0"
+              ></div>
+            </div>
+            <div class="textbox text-center mt-[30px] max-w-[190px]">
+              <p class="text-title-medium text-[#1E1D4C]">Calculated Weather</p>
+              <p class="mt-[5px]">
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </li>
+          <li
+            class="service__list-item relative hover:bg-white hover:shadow-lg duration-300 text-center flex flex-col items-center justify-center p-[45px] cursor-pointer rounded-[36px]"
+          >
+            <div class="img relative max-h-[70px] flex items-center z-10">
+              <img
+                src="/assets/images/plane-icon.png"
+                alt="plane"
+                class="z-20 relative h-[140px]"
+              />
+              <div
+                class="h-[50px] w-[50px] absolute bg-[#FFF1DA] rounded-tl-[20px] rounded-br-[20px] right-[30px] top-0 z-10"
+              ></div>
+            </div>
+            <div class="textbox text-center mt-[30px] max-w-[190px] z-10">
+              <p class="text-title-medium text-[#1E1D4C]">Beset Flights</p>
+              <p class="mt-[5px]">
+                Engrossed listening. Park gate sell they west hard for the.
+              </p>
+            </div>
+          </li>
+          <li
+            class="service__list-item hover:bg-white hover:shadow-lg duration-300 text-center flex flex-col items-center justify-center p-[45px] cursor-pointer rounded-[36px]"
+          >
+            <div class="img relative">
+              <img
+                src="/assets/images/vocal-icon.png"
+                alt="voice"
+                class="z-20 relative"
+              />
+              <div
+                class="h-[50px] w-[50px] absolute bg-[#FFF1DA] rounded-tl-[20px] rounded-br-[20px] right-[-20px] top-0 z-10"
+              ></div>
+            </div>
+            <div class="textbox text-center mt-[30px] max-w-[190px]">
+              <p class="text-title-medium text-[#1E1D4C]">Local Events</p>
+              <p class="mt-[5px]">
+                Barton vanity itself do in it. Preferd to men it engrossed
+                listening.
+              </p>
+            </div>
+          </li>
+          <li
+            class="service__list-item cursor-pointer hover:bg-white hover:shadow-lg duration-300 text-center flex flex-col items-center justify-center rounded-[36px] p-[45px]"
+          >
+            <div class="img relative">
+              <img
+                src="/assets/images/custom-icon.png"
+                alt="voice"
+                class="z-20 relative"
+              />
+              <div
+                class="h-[50px] w-[50px] absolute bg-[#FFF1DA] rounded-tl-[20px] rounded-br-[20px] right-[-20px] top-0 z-10"
+              ></div>
+            </div>
+            <div class="textbox text-center mt-[30px] max-w-[190px]">
+              <p class="text-title-medium text-[#1E1D4C]">Customization</p>
+              <p class="mt-[5px]">
+                We deliver outsourced aviation services for military customers
+                listening.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="destination" class="pt-[123px]">
+        <div class="container">
+          <div class="textbox m-auto text-center">
+            <h4 class="text-h4 text-semibold capitalize">Top Selling</h4>
+            <h2 class="text-volkhovBold text-h2 text-[#14183E]">
+              Top Destinations
+            </h2>
+          </div>
+          <ul
+            class="relative destination__list mt-[60px] flex gap-4 w-full justify-center"
+          >
+            <li
+              class="destination__list-item rounded-3xl overflow-hidden shadow-lg bg-white aspect-[314/457] flex flex-col justify-between items-center cursor-pointer group gap-6"
+            >
+              <div
+                class="img overflow-hidden aspect-[316/327] w-full min-w-[316px]"
+              >
+                <img
+                  src="/assets/images/desti-1.jpeg"
+                  alt="destination"
+                  class="object-cover object-center group-hover:scale-125 duration-300"
+                />
+              </div>
+              <div class="content w-full p-[20px]">
+                <div
+                  class="content__row flex items-center justify-between gap-4"
+                >
+                  <p class="text-title-small">Rome, Italty</p>
+                  <p class="text-title-small">$5,42k</p>
+                </div>
+                <div class="content__row mt-5 flex items-center gap-4">
+                  <div class="icon h-[20px] w-[20px]">
+                    <img
+                      src="/assets/images/arrowup-icon.png"
+                      alt="arrow up icon"
+                    />
+                  </div>
+                  <p>10 Days Trip</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="destination__list-item rounded-3xl overflow-hidden shadow-lg bg-white aspect-[314/457] flex flex-col justify-between items-center cursor-pointer group gap-6"
+            >
+              <div
+                class="img overflow-hidden aspect-[316/327] w-full min-w-[316px]"
+              >
+                <img
+                  src="/assets/images/desti-3.jpeg"
+                  alt="destination"
+                  class="object-cover object-center group-hover:scale-125 duration-300"
+                />
+              </div>
+              <div class="content w-full p-[20px]">
+                <div
+                  class="content__row flex items-center justify-between gap-4"
+                >
+                  <p class="text-title-small">Full Europe</p>
+                  <p class="text-title-small">$15k</p>
+                </div>
+                <div class="content__row mt-5 flex items-center gap-4">
+                  <div class="icon h-[20px] w-[20px]">
+                    <img
+                      src="/assets/images/arrowup-icon.png"
+                      alt="arrow up icon"
+                    />
+                  </div>
+                  <p>28 Days Trip</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="z-10 relative destination__list-item rounded-3xl overflow-hidden shadow-lg bg-white aspect-[314/457] flex flex-col justify-between items-center cursor-pointer group gap-6"
+            >
+              <div
+                class="img overflow-hidden aspect-[316/327] w-full min-w-[316px]"
+              >
+                <img
+                  src="/assets/images/desti-1.jpeg"
+                  alt="destination"
+                  class="object-cover object-center group-hover:scale-125 duration-300"
+                />
+              </div>
+              <div class="content w-full p-[20px]">
+                <div
+                  class="content__row flex items-center justify-between gap-4"
+                >
+                  <p class="text-title-small">Rome, Italty</p>
+                  <p class="text-title-small">$5,42k</p>
+                </div>
+                <div class="content__row mt-5 flex items-center gap-4">
+                  <div class="icon h-[20px] w-[20px]">
+                    <img
+                      src="/assets/images/arrowup-icon.png"
+                      alt="arrow up icon"
+                    />
+                  </div>
+                  <p>10 Days Trip</p>
+                </div>
+              </div>
+            </li>
+            <li class="absolute right-[10px] bottom-0 z-0">
+              <img src="/assets/images/sping-icon.png" alt="spring icon" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="trip" class="pt-[186px]">
+        <div class="container flex items-center justify-between gap-4">
+          <div class="textbox max-w-[511px]">
+            <p class="text-title-small">Easy and Fast</p>
+            <h2 class="font-volkhovBold text-[#14183E] text-h2">
+              Book your next trip in 3 easy steps
+            </h2>
+            <ul class="mt-[30px] flex flex-col gap-[48px]">
+              <li class="flex gap-[12px] items-center">
+                <div class="bg-[#F0BB1F] rounded-xl p-[13px]">
+                  <img src="/assets/images/square-icon.png" alt="square-icon" />
+                </div>
+                <div class="info max-w-[327px]">
+                  <p class="font-bold">Choose Destination</p>
+                  <p class="font-regular">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Urna, tortor tempus.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-[12px] items-center">
+                <div class="bg-[#DF6951] rounded-xl p-[13px]">
+                  <img src="/assets/images/swim-icon.png" alt="square-icon" />
+                </div>
+                <div class="info max-w-[327px]">
+                  <p class="font-bold">Make Payment</p>
+                  <p class="font-regular">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Urna, tortor tempus.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-[12px] items-center">
+                <div class="bg-[#006380] rounded-xl p-[13px]">
+                  <img src="/assets/images/car-icon.png" alt="square-icon" />
+                </div>
+                <div class="info max-w-[327px]">
+                  <p class="font-bold">Reach Airport on Selected Date</p>
+                  <p class="font-regular">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Urna, tortor tempus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="content relative">
+            <div
+              class="z-10 relative bg-white shadow-xl rounded-3xl px-[25px] py-[30px] overflow-hidden"
+            >
+              <div class="img rounded-[24px] overflow-hidden">
+                <img
+                  src="/assets/images/trip-1.jpg"
+                  alt="trip 1"
+                  class="object-cover object-center"
+                />
+              </div>
+              <div class="content mt-[24px]">
+                <h4 class="text-title-small text-[#080809]">Trip To Greece</h4>
+                <p class="mt-[13px] text-[#84829A]">
+                  14-29 June | by Robbin joseph
+                </p>
+                <ul class="mt-[21px] flex flex-1 items-center gap-[18px]">
+                  <li
+                    class="cursor-pointer h-36px w-36px p-[10px] rounded-full flex-center bg-[#F5F5F5]"
+                  >
+                    <img src="/assets/images/leaf-icon.png" alt="leaf icon" />
+                  </li>
+                  <li
+                    class="cursor-pointer h-36px w-36px p-[10px] rounded-full flex-center bg-[#F5F5F5]"
+                  >
+                    <img src="/assets/images/map-icon.png" alt="map icon" />
+                  </li>
+                  <li
+                    class="cursor-pointer h-36px w-36px p-[10px] rounded-full flex-center bg-[#F5F5F5]"
+                  >
+                    <img
+                      src="/assets/images/arrowup-gray-icon.png"
+                      alt="arrowup-gray-icon.png icon"
+                    />
+                  </li>
+                </ul>
+                <div class="mt-[30px] flex justify-between items-center">
+                  <div class="flex items-center gap-[15px]">
+                    <div class="icon">
+                      <img
+                        src="/assets/images/building-icon.png"
+                        alt="building"
+                      />
+                    </div>
+                    <p class="text-[#84829A]">24 people going</p>
+                  </div>
+                  <div class="cursor-pointer">
+                    <img src="/assets/images/heart-icon.png" alt="hear icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[354px] h-[354px] absolute block top-[-50px] right-[-80px] bg-[#59B1E6] blur-[150px] rounded-full z-0"
+            ></div>
+            <div
+              class="flex items-start gap-3 absolute bottom-[50px] right-[-120px] w-full max-w-[263px] rounded-[18px] bg-white shadow-xl px-[22px] py-[20px] z-20"
+            >
+              <div class="overflow-hidden rounded-full w-fit flex-shrink-0">
+                <img
+                  src="/assets/images/trip-2.jpg"
+                  alt="trip 2"
+                  class="object-cover object-center"
+                />
+              </div>
+              <div class="content flex-grow">
+                <p class="capitalize text-blue-125">ongoing</p>
+                <p class="text-title-small text-blue-400">Trip to rome</p>
+                <p class="text-blue-400 text-foot">
+                  <span class="text-[#8A79DF]">40%</span> completed
+                </p>
+                <div
+                  class="w-full mt-[10px] rounded-[30px] relative h-[5px] bg-[#F5F5F5] overflow-hidden"
+                >
+                  <span class="h-full w-[30%] bg-[#8A79DF] block"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="pt-[210px]">
+        <div class="container flex gap-[87px] items-center justify-between">
+          <div class="textbox mr-auto max-w-[409px] font-volkhovBold">
+            <h4 class="text-h4 text-semibold capitalize">Testimonial</h4>
+            <h2 class="text-volkhovBold text-h2 text-[#14183E]">
+              What people say about Us.
+            </h2>
+            <ul class="flex items-center gap-[26px] mt-[82px]">
+              <li
+                class="rounded-full w-[12px] h-[12px] bg-[#E5E5E5] hover:bg-[#39425D] duration-300 cursor-pointer"
+              ></li>
+              <li
+                class="rounded-full w-[12px] h-[12px] bg-[#E5E5E5] hover:bg-[#39425D] duration-300 cursor-pointer"
+              ></li>
+              <li
+                class="rounded-full w-[12px] h-[12px] bg-[#E5E5E5] hover:bg-[#39425D] duration-300 cursor-pointer"
+              ></li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute avatar rounded-full overflow-hidden h-[68px] w-[68px] left-[-40px] top-[-30px]"
+            >
+              <img src="/assets/images/avatar-1.jpg" alt="avatar" />
+            </div>
+            <div
+              class="content max-w-[504px] bg-white px-[34px] py-[28px] rounded-[10px] shadow-xl"
+            >
+              <p class="max-w-[402px]">
+                “On the Windows talking painted pasture yet its express parties
+                use. Sure last upon he same as knew next. Of believed or
+                diverted no.”
+              </p>
+              <div class="info mt-[34px]">
+                <p class="font-semibold">Mike taylor</p>
+                <p class="text-foot">Lahore, Pakistan</p>
+              </div>
+            </div>
+            <div
+              class="absolute right-[-50px] top-[50%] translate-y-[-50%] flex flex-col justify-between gap-[58px]"
+            >
+              <div class="cursor-pointer rotate-180">
+                <img src="/assets/images/arrowdown-icon.png" alt="arrow down" />
+              </div>
+              <div class="cursor-pointer">
+                <img src="/assets/images/arrowdown-icon.png" alt="arrow down" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brand">
+        <div class="container">
+          <ul
+            class="*:cursor-pointer *:grayscale *:duration-300 flex justify-between gap-[50px] mt-[96px]"
+          >
+            <li
+              class="hover:grayscale-0 hover:bg-white hover:shadow-xl px-[40px] max-h-[86px] flex-center rounded-[10px]"
+            >
+              <img src="/assets/images/brand-1.png" alt="brand 1" />
+            </li>
+            <li
+              class="hover:grayscale-0 hover:bg-white hover:shadow-xl px-[40px] max-h-[86px] flex-center rounded-[10px]"
+            >
+              <img src="/assets/images/brand-2.png" alt="brand 1" />
+            </li>
+            <li
+              class="hover:grayscale-0 hover:bg-white hover:shadow-xl px-[40px] max-h-[86px] flex-center rounded-[10px]"
+            >
+              <img src="/assets/images/brand-3.png" alt="brand 1" />
+            </li>
+            <li
+              class="hover:grayscale-0 hover:bg-white hover:shadow-xl px-[40px] max-h-[86px] flex-center rounded-[10px]"
+            >
+              <img src="/assets/images/brand-4.png" alt="brand 1" />
+            </li>
+            <li
+              class="hover:grayscale-0 hover:bg-white hover:shadow-xl px-[40px] max-h-[86px] flex-center rounded-[10px]"
+            >
+              <img src="/assets/images/brand-5.png" alt="brand 1" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="subscribe" class="pt-[124px]">
+        <div class="container">
+          <div
+            class="relative px-[155px] py-[78px] border-[1px] border-[#6246E5] bg-[#F9F7FE] rounded-3xl"
+          >
+            <div class="textbox relative z-10 w-fit mx-auto">
+              <h3 class="text-[3.3rem] font-semibold text-center max-w-[859px]">
+                Subscribe to get information, latest news and other interesting
+                offers about Jadoo
+              </h3>
+            </div>
+            <form
+              action=""
+              class="relative z-10 form flex gap-6 mt-[74px] w-full"
+            >
+              <div
+                class="relative px-[31px] py-[19px] bg-white rounded-3xl flex-grow flex items-center gap-[14px]"
+              >
+                <div>
+                  <img src="/assets/images/email-icon.png" alt="email icon" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Your email"
+                  class="placeholder:text-[#39425D] placeholder:font-regular placeholder:text-[1.4rem] text-[1.4rem] font-regular text-[#39425D] w-full h-full duration-300 focus:outline-[#DF6951] px-4"
+                />
+              </div>
+              <button
+                type="submit"
+                class="flex-shrink-0 h-[68px] px-[50px] rounded-[10px] bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white font-semibold"
+              >
+                Subscribe
+              </button>
+            </form>
+            <div
+              class="z-10 absolute right-[-20px] top-[-20px] h-[70px] w-[70px] bg-gradient-to-b from-[#747DEF] to-[#5E3BE1] rounded-full flex-center"
+            >
+              <img
+                src="/assets/images/arrowup-white-icon.png"
+                alt="arrow white icon"
+                class="h-[30px]"
+              />
+            </div>
+            <div class="h-full w-full absolute top-0 left-0 overflow-hidden">
+              <div class="absolute left-[-120px] bottom-0 z-0">
+                <img src="/assets/images/rings-1.png" alt="rings" />
+              </div>
+              <div class="absolute right-0 top-0 z-0">
+                <img src="/assets/images/rings-2.png" alt="rings 2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="absolute top-[-100px] left-[750px] -z-10 max-h-[1018px] flex-center"
+      >
+        <img src="/assets/images/right-bg.png" alt="right background" />
+      </div>
+      <div
+        class="absolute left-[-450px] top-[-10px] w-[500px] h-[500px] bg-[#D5AEE4] rounded-full blur-[150px] -z-50"
+      ></div>
+    </main>
+    <footer id="footer" class="py-[96px] relative overflow-hidden">
+      <div class="container">
+        <div
+          class="footer__top flex items-center gap-[16px] justify-between flex-wrap"
+        >
+          <a href="#" class="logo flex-shrink-0">
+            <div class="img h-[53px]">
+              <img
+                src="/assets/images/logo.png"
+                alt="logo"
+                class="object-center"
+              />
+            </div>
+            <p class="max-w-[207px] text-[13px] mt-[32px]">
+              Book your trip in minute, get full Control for much longer.
+            </p>
+          </a>
+          <div
+            class="flex flex-1 justify-center gap-y-[34px] gap-x-[72px] justify-items-center"
+          >
+            <div class="col flex flex-col gap-[34px]">
+              <p class="capitalize font-bold text-[#080809] text-[2.1rem]">
+                company
+              </p>
+              <ul class="flex flex-col gap-[10px]">
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Mobile</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col flex flex-col gap-[34px]">
+              <p class="capitalize font-bold text-[#080809] text-[2.1rem]">
+                Contact
+              </p>
+              <ul class="flex flex-col gap-[10px]">
+                <li>
+                  <a href="#">Help/FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Press</a>
+                </li>
+                <li>
+                  <a href="#">Affilates</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col flex flex-col gap-[34px]">
+              <p class="capitalize font-bold text-[#080809] text-[2.1rem]">
+                More
+              </p>
+              <ul class="flex flex-col gap-[10px]">
+                <li>
+                  <a href="#">Airlinefees</a>
+                </li>
+                <li>
+                  <a href="#">Airline</a>
+                </li>
+                <li>
+                  <a href="#">Low fare tips</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-shrink-0">
+            <ul class="socials flex gap-[25px]">
+              <li class="h-[41px] w-[41px] rounded-full shadow-lg flex-center">
+                <a href="#">
+                  <img src="/assets/images/facebook-icon.png" alt="facebook" />
+                </a>
+              </li>
+              <li
+                class="h-[41px] w-[41px] bg-[#F289AA] rounded-full shadow-lg flex-center"
+              >
+                <a href="#">
+                  <img
+                    src="/assets/images/instagram-icon.png"
+                    alt="instagram-icon"
+                  />
+                </a>
+              </li>
+              <li class="h-[41px] w-[41px] rounded-full shadow-lg flex-center">
+                <a href="#">
+                  <img
+                    src="/assets/images/twitter-icon.png"
+                    alt="twitter-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+            <p class="text-[2.0rem] mt-[24px]">Discover our app</p>
+            <div class="app mt-[16px] flex gap-[7px]">
+              <a
+                href="#"
+                target="_blank"
+                class="rounded-full bg-black w-fit px-[17px] py-[7px] flex items-center gap-[3px]"
+              >
+                <div>
+                  <img src="/assets/images/google-play.png" alt="google-play" />
+                </div>
+                <div>
+                  <p class="text-white font-bold">Get it on</p>
+                  <p class="text-white font-regular">Google play</p>
+                </div>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="rounded-full bg-black w-fit px-[17px] py-[7px] flex items-center gap-[3px]"
+              >
+                <div class="flex-shrink-0 h-[16px]">
+                  <img src="/assets/images/apple-icon.png" alt="apple-icon" />
+                </div>
+                <div>
+                  <p class="text-white text-sm">Available on the</p>
+                  <p class="text-white font-bold">Apple Store</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom text-center mx-auto pt-[84px]">
+          <p class="text-foot">All rights reserved@jadoo.co</p>
+        </div>
+      </div>
+      <div
+        class="w-[478px] h-[496px] rounded-full bg-[#D5AEE4] blur-[150px] absolute right-[-50px] bottom-[-400px]"
+      ></div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

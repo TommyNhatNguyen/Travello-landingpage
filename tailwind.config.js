@@ -1,0 +1,50 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx,html}", "*.{js,jsx,ts,tsx,html}"],
+  theme: {
+    fontFamily: {
+      regular: "var(--ff-regular)",
+      medium: "var(--ff-medium)",
+      semibold: "var(--ff-semibold)",
+      bold: "var(--ff-bold)",
+      volkhovBold: "var(--ff-vbold)",
+    },
+    extend: {
+      colors: {
+        "orange-200": "#DF6951",
+        "orange-100": "#F2994A",
+        "blue-400": "#080809",
+        "blue-300": "#1E1D4C",
+        "blue-200": "#181E4B",
+        "blue-150": "#686D77",
+        "blue-125": "#84829A",
+        "blue-100": "#5E6282",
+        "blue-50": "#212832",
+      },
+      fontSize: {
+        text: "var(--fs-text)",
+        h1: "var(--fs-h1)",
+        h2: "var(--fs-h2)",
+        h3: "var(--fs-h3)",
+        h4: "var(--fs-h4)",
+        "title-big": "var(--fs-title-big)",
+        "title-medium": "var(--fs-title-medium)",
+        "title-small": "var(--fs-title-small)",
+        foot: "var(--fs-foot)",
+        btn: "var(--fs-btn)",
+      },
+      borderColor: {
+        "orange-200": "#DF6951",
+        "orange-100": "#F2994A",
+        "blue-400": "#080809",
+        "blue-300": "#1E1D4C",
+        "blue-200": "#181E4B",
+        "blue-150": "#686D77",
+        "blue-125": "#84829A",
+        "blue-100": "#5E6282",
+        "blue-50": "#212832",
+      },
+    },
+  },
+  plugins: ["prettier-plugin-tailwindcss"],
+};
